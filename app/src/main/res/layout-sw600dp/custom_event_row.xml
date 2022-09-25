@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearView"
+    android:background="@drawable/background_event_row_calendar"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/startImg"
+        android:layout_width="30dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#7408C1" />
+
+    <ImageView
+        android:id="@+id/iconImg"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@+id/startImg"
+        android:background="@color/white"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/ic_action_calendar"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/fIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconImg"
+        android:layout_toEndOf="@+id/startImg"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/teddybear"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/fD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sD"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/fIcon"
+        android:background="@color/white"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:paddingStart="15dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="fD"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@+id/iconImg"
+        android:background="@color/white"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:paddingStart="15dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="sD"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:id="@+id/dash"
+        android:layout_toEndOf="@+id/sD"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:paddingStart="15dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:fontFamily="@font/roboto_condensed_regular"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/eD"
+        android:layout_toEndOf="@+id/dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/white"
+        android:paddingStart="15dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="eD"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_condensed_regular"
+        tools:ignore="RtlSymmetry" />
+    <ImageView
+        android:id="@+id/action"
+        android:layout_alignParentEnd="true"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/ic_action_dt"
+        />
+</RelativeLayout>

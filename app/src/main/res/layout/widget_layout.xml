@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_layout"
+    android:background="@drawable/background_activity_main_top"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/widget_image"
+        android:src="@drawable/meds"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+       <ListView
+           android:id="@+id/listViewWidget"
+           android:divider="@null"
+           android:dividerHeight="0dp"
+           android:layout_margin="1dp"
+           android:layout_width="120dp"
+           android:layout_height="80dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

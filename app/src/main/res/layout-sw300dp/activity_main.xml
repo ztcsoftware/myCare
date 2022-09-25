@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/notificationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="@string/notificationText"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <View
+            android:id="@+id/dividerTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/recyclerView"
+            android:layout_margin="4dp"
+            android:background="?android:attr/listDivider" />
+
+        <RelativeLayout
+            android:id="@+id/middleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dividerTop">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:src="@drawable/my_calendar"
+                android:layout_marginStart="70dp"
+                android:background="#00FFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="180dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="70dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@drawable/notebook"
+                android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/dividerBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/middleView"
+                        android:layout_margin="4dp"
+                        android:background="?android:attr/listDivider" />
+
+        <ListView
+            android:id="@+id/listViewSn"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/dividerBottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp" />
+                    <ImageView
+                        android:id="@+id/emptyListSn"
+                        android:src="@drawable/ic_action_empty_list"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="60sp"
+                        android:layout_below="@id/dividerBottom"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_margin="16dp"
+                    app:elevation="6dp"
+                    app:backgroundTint="@color/red"
+                    android:layout_gravity="bottom|end"
+                    app:srcCompat="@drawable/ic_action_add"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>

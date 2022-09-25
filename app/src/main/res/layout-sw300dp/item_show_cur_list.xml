@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:elevation="6dp"
+    android:background="@drawable/background_activity_main_top"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:gravity="center"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imagePro"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/meds" />
+        <TextView
+            android:id="@+id/textTop"
+            android:text="@string/take"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/imagePro"
+            />
+        <TextView
+            android:id="@+id/textMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text Middle"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:layout_toEndOf="@+id/imagePro"
+            android:layout_below="@+id/textTop"
+            />
+        <TextView
+            android:id="@+id/textBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/now"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/imagePro"
+            android:layout_below="@+id/textMiddle"
+            />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/imagePro"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:text="@string/submit"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:layout_marginStart="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

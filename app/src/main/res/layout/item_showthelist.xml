@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pN"
+        android:text="TextView#1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/uFo"
+        android:text="TextView#2"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_submission"
+            android:textSize="14sp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/roboto_condensed_regular"/>
+        <TextView
+            android:id="@+id/lastSub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Time and date"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|bottom"
+            android:textColor="@color/red"
+            android:fontFamily="@font/roboto_condensed_regular"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="end"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/dt"
+            android:src="@drawable/ic_action_dt_white"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

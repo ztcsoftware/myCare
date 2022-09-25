@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/title_text"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="38dp"
+        android:hint="@string/main_text"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:fontFamily="@font/roboto_condensed_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/aux_text"
+        android:textSize="52sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:fontFamily="@font/roboto_condensed_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/detail_text"
+        android:textSize="52sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:fontFamily="@font/roboto_condensed_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <View
+        android:id="@+id/dividerFirst"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <LinearLayout
+        android:id="@+id/chBoxGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/dividerFirst"
+        tools:ignore="MissingConstraints">
+
+        <CheckBox
+            android:id="@+id/chBx1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="14dp"
+            android:text="@string/cb1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintEnd_toStartOf="@+id/chBx2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dividerFirst" />
+
+        <CheckBox
+            android:id="@+id/chBx2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="14dp"
+            android:text="@string/cb2"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintEnd_toStartOf="@+id/chBx3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/chBx1"
+            app:layout_constraintTop_toBottomOf="@+id/dividerFirst" />
+
+        <CheckBox
+            android:id="@+id/chBx3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="14dp"
+            android:text="@string/cb3"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintEnd_toStartOf="@+id/chBx4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/chBx2"
+            app:layout_constraintTop_toBottomOf="@+id/dividerFirst" />
+
+        <CheckBox
+            android:id="@+id/chBx4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="14dp"
+            android:text="@string/cb4"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintEnd_toStartOf="@+id/chBx5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/chBx3"
+            app:layout_constraintTop_toBottomOf="@+id/dividerFirst" />
+
+        <CheckBox
+            android:id="@+id/chBx5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="14dp"
+            android:text="@string/cb5"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/chBx4"
+            app:layout_constraintTop_toBottomOf="@+id/dividerFirst" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chBoxGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/chBoxGroup1"
+        tools:ignore="MissingConstraints">
+
+        <CheckBox
+            android:id="@+id/chBx6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="@string/cb6"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chBx3" />
+
+        <CheckBox
+            android:id="@+id/chBx7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="@string/cb7"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:layout_marginStart="15dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            />
+        <CheckBox
+            android:id="@+id/chBx8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/cb8"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chBoxGroup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/chBoxGroup2"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:id="@+id/chip1"
+            android:layout_marginStart="4dp"
+            android:text="@string/text_a"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:chipIconVisible="true"
+            app:chipIcon="@drawable/ic_action_bed"
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_marginStart="4dp"
+            android:text="@string/text_b"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            app:chipIconVisible="true"
+            app:chipIcon="@drawable/ic_action_alarm"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_marginStart="4dp"
+            android:text="@string/text_c"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:chipIconVisible="true"
+            app:chipIcon="@drawable/ic_action_sun"
+            />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:text="@string/text_d"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:layout_marginStart="4dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:chipIconVisible="true"
+            app:chipIcon="@drawable/ic_action_moon"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="26dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/chBoxGroup3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonsGroup"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        >
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/cancel"
+            android:fontFamily="@font/roboto_condensed_regular"
+            />
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/clean"
+            android:fontFamily="@font/roboto_condensed_regular"
+            />
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/submit"
+            android:fontFamily="@font/roboto_condensed_regular"
+            />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/switchAutoManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/manual"
+        android:thumbTint="@color/red"
+        android:trackTint="@color/grey"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="100dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/titleSettings"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_auto"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/dividerMiddleSettings"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="1dp"
+        android:layout_marginVertical="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textViewTimeSettings"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_between"
+        android:textSize="34sp"
+        />
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/numberPickerDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="20dp"
+        app:np_width="200dp"
+        app:np_height="100dp"
+        app:np_orientation="horizontal"
+        app:np_dividerColor="@color/red"
+        app:np_dividerLength="50dp"
+        app:np_dividerThickness="5dp"
+        app:np_max="40"
+        app:np_min="14"
+        app:np_selectedTextColor="@color/red"
+        app:np_textColor="@color/black"
+        app:np_textSize="24sp"
+        app:np_selectedTextSize="26dp"
+        app:np_value="28"
+        />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_time_days"
+        android:textSize="34sp"
+        android:layout_marginStart="50dp"
+        />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/numberPickerMonths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="20dp"
+        app:np_width="200dp"
+        app:np_height="100dp"
+        app:np_orientation="horizontal"
+        app:np_dividerColor="@color/red"
+        app:np_dividerLength="50dp"
+        app:np_dividerThickness="5dp"
+        app:np_max="10"
+        app:np_min="3"
+        app:np_selectedTextColor="@color/red"
+        app:np_textColor="@color/black"
+        app:np_textSize="24sp"
+        app:np_selectedTextSize="26dp"
+        app:np_value="3" />
+
+
+
+</LinearLayout>

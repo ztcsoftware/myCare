@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">myCare</string>
+    <string name="cancel">Άκυρο</string>
+    <string name="clean">Καθαρισμός</string>
+    <string name="submit">Εισαγωγή</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="deleteAll">Διαγραφή Όλων</string>
+    <string name="info">Πληροφορίες</string>
+    <string name="dialog_text">Η ενέργεια αυτή θα διαγράψει την καταχώριση!!! </string>
+    <string name="no_entries">Καμία καταχώριση</string>
+    <string name="save_entry">Οι καταχωρίσεις σου αποθηκεύθηκαν!!!</string>
+    <string name="entry_deleted">Η καταχώριση διαγράφηκε</string>
+    <string name="entries_deleted">Οι καταχωρίσεις διαγράφηκαν</string>
+    <string name="submit_something">Δεν έχεις εισάγει κάτι!!!</string>
+    <string name="submit_codes">Επίλεξε ημέρες της εβδομάδας</string>
+    <string name="submit_hbts">Δεν έχεις επιλέξει ζώνη ώρας</string>
+    <string name="title_text">Εισαγωγή…</string>
+    <string name="main_text">Όνομα σκευάσματος</string>
+    <string name="aux_text">Λήψη από</string>
+    <string name="detail_text">Για θεραπεία</string>
+    <string name="cb1">Δ</string>
+    <string name="cb2">Τρ</string>
+    <string name="cb3">Τε</string>
+    <string name="cb4">Πε</string>
+    <string name="cb5">Πα</string>
+    <string name="cb6">Σ</string>
+    <string name="cb7">Κ</string>
+    <string name="cb8">ΚΘ</string>
+
+    <string name="monday">Δευτέρα</string>
+    <string name="tuesday">Τρίτη</string>
+    <string name="wednesday">Τετάρτη</string>
+    <string name="thursday">Πέμπτη</string>
+    <string name="friday">Παρασκευή</string>
+    <string name="saturday">Σάββατο</string>
+    <string name="sunday">Κυριακή</string>
+
+    <!--  Text_A : Early Morning [00:00 - 06:00) -->
+    <string name="text_a">Νωρίς Πρωί</string>
+    <!--  Text_B : Morning  [06:00 - 12:00) -->
+    <string name="text_b">Πρωί</string>
+    <!--  Text_C : Morning  [12:00 - 18:00) -->
+    <string name="text_c">Απόγευμα</string>
+    <!--  Text_D : Morning  [18:00 - 24:00) -->
+    <string name="text_d">Βράδυ</string>
+
+    <string name="notificationText">Καμία ειδοποίηση !!!</string>
+
+    <string name="widget_description">MyRe widget</string>
+    <string name="channel_name">Notification_hd</string>
+    <string name="channel_description">This channel is for notifications</string>
+    <string name="info_confirm">Επιβεβαίωση της καταχώρισης</string>
+    <string name="confirm">Επιβεβαίωση</string>
+    <string name="action_confirm">Η δράση επιβεβαιώθηκε!!!</string>
+    <string name="no_events_info_text">Επίλεξε χρονικό διάστημα για εισαγωγή γεγονότος</string>
+
+    <string name="manual">Χειροκίνητη εισαγωγή</string>
+    <string name="auto">Αυτόματος υπολογισμός</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="settings_auto">Ρυθμίσεις για αυτόματο υπολογισμό</string>
+    <string name="time_between">Χρόνος ανάμεσα στις περιόδους (ημέρες)</string>
+    <string name="max_time_days">Μέγιστος χρόνος για υπολογισμούς (μήνες)</string>
+    <string name="appVersion">Έκδοση εφαρμογής</string>
+    <string name="hour">Ώρα</string>
+    <string name="take">Λήψη</string>
+    <string name="now">Τώρα</string>
+    <string name="last_submission">Τελευταία Λήψη</string>
+    <string name="time_zone">Χρονικά διαστήματα</string>
+    <string name="ntf_msg">Υπάρχουν σκευάσματα για λήψη</string>
+    <string name="data_saved">Τα δεδομένα αποθηκεύθηκαν !!!</string>
+    <string name="fert_msg">Διαθέσιμη στην αυτόματη λειτουργία</string>
+<!--    Material Calendar Translation-->
+
+    <string name="material_calendar_monday">Δε</string>
+    <string name="material_calendar_tuesday">Τρ</string>
+    <string name="material_calendar_wednesday">Τε</string>
+    <string name="material_calendar_thursday">Πε</string>
+    <string name="material_calendar_friday">Πα</string>
+    <string name="material_calendar_saturday">Σα</string>
+    <string name="material_calendar_sunday">Κυ</string>
+
+    <array name="material_calendar_months_array">
+        <item>Ιανουάριος</item>
+        <item>Φεβρουάριος</item>
+        <item>Μάρτιος</item>
+        <item>Απρίλιος</item>
+        <item>Μάϊος</item>
+        <item>Ιούνιος</item>
+        <item>Ιούλιος</item>
+        <item>Αύγουστος</item>
+        <item>Σεπτέμβριος</item>
+        <item>Οκτώβριος</item>
+        <item>Νοέμβριος</item>
+        <item>Δεκέμβριος</item>
+    </array>
+
+    <string name="material_calendar_today_button">Σήμερα</string>
+    <string name="material_calendar_positive_button">Οκ</string>
+    <string name="material_calendar_negative_button">Άκυρο</string>
+
+</resources>
